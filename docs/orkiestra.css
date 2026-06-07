@@ -8,7 +8,8 @@ body {
 header{
     text-align: center;
     width: 100%;
-    height: 130px;
+    height: 100%;
+    max-height: 130px;
 }
 main{
     padding-top: 60px;
@@ -34,6 +35,9 @@ footer{
 .headframe{
     display: flex;
     width: 100%;
+    height: 100%;
+    min-height: 100px;
+    max-height: 130px;
     background-color: aliceblue;
     flex-direction: column;
 }
@@ -50,8 +54,10 @@ footer{
     align-items: center;
 }
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
 }
 .title{
     font-size: 17px;
@@ -86,12 +92,13 @@ footer{
     position: relative;
     width: 100%;
     padding: 40px;
+    margin-top: 20px;
 }
 .galery{
     display: flex;
     position: relative;
 }
-.galery_img{
+.galery_center{
     width: 600px;
     height: 400px;
     border-radius: 20px;
@@ -134,15 +141,19 @@ footer{
 
 .about{
     display: flex;
-    background-color: rgb(62, 61, 61);
-    width: 400px;
+    background-color: rgb(108, 105, 105);
+    width: 100%;
+    max-width: 700px;
     height: 300px;
-    border-radius: 20px ;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 40px;
+    margin:10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    flex-direction: column;
+    overflow: wrap;
+    box-shadow: 50 10px 30px rgba(0,0,0,0.3);
 }
 
 
